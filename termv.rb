@@ -8,9 +8,8 @@ class Termv < Formula
   depends_on "mpv"
   depends_on "jq"
   depends_on "fzf"
-  depends_on "make" => :build
 
   def install
-    system "make", "install"
+    bin.install "termv"
   end
 end
